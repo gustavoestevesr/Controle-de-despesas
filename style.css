@@ -1,0 +1,99 @@
+.title{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container{
+    width: 30%;
+    margin: auto;
+}
+
+.receitas, .despesas{
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+#receitas{
+    color: rgb(0, 190, 0);
+}
+
+#despesas{
+    color: rgb(190, 0, 0);
+}
+
+.receitas_despesas{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+#lbl_saldo_atual,#lbl_adicionar_transacao,#lbl_transacoes,#lbl_despesas,#lbl_receitas{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+input{
+    padding-left: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+#saldo{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: xx-large;
+    color: rgb(38, 109, 240);
+}
+
+button{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(189, 0, 189);
+    color: white;
+    border: 0;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+button:hover{
+    transform: scale(1.02);
+}
+
+input{
+    width: 100%;
+    height: 35px;
+}
+
+.transacoes,.adicionar_transacao{
+    margin-top: 30px;
+}
+
+.item{
+    background-color: white;
+    width: 95%;
+    height: 35px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    padding-top: 0.1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 1px 1px gray;
+    display: flex;
+}
+
+.design{
+    width: 10px;
+    height: 55px;
+    margin-left: auto;
+}

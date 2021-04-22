@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de despesas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <link rel="stylesheet" href="style2.css">
+    
+    <div class="title">
+        <h2>Controle de despesas</h2>
+    </div>
+
+    <div id="container">
+
+        <div class="saldo_atual">
+            <p id="lbl_saldo_atual">SALDO ATUAL</p>
+            <p id="saldo">0.00</p>
+        </div>
+
+        <div class="receitas_despesas">
+            <div class="receitas">
+                <p id="lbl_receitas">RECEITAS</p>
+                <p id="receitas">0.00</p>
+            </div>
+            <div class="despesas">
+                <p id="lbl_despesas">DESPESAS</p>
+                <p id="despesas">0.00</p>
+            </div>
+        </div>
+
+        <p id="lbl_transacoes">TRANSAÇÕES</p>
+        <hr>
+        <div class="transacoes">
+            
+        </div>
+
+        <div class="adicionar_transacao">
+            <p id="lbl_adicionar_transacao">ADICIONAR TRANSAÇÃO</p>
+            <hr>
+            <label for="despesa">TRANSAÇÃO:</label>
+            <p><input type="text" name="despesa" id="despesa" placeholder="Nome da transação" autocomplete="false"></p>
+            <label for="valor">VALOR:</label>
+            <p><input type="number" name="valor" id="valor" placeholder="Valor da transação" autocomplete="false"></p>
+            <p><small>obs: negativo = despesas / positivo = receitas</small></p>
+            <button onclick="adicionar()">ADICIONAR</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
